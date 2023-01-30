@@ -1,0 +1,134 @@
+/*-----------CSS VARIABLES-------------*/
+:root{
+    
+
+        /*-----------PRIMARY COLORS-------------*/
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-Cyan: hsl(184, 100%, 22%);
+--Very-Dark-Cyan: hsl(179, 100%, 13%);
+
+        /*-----------NEUTRAL COLORS-------------*/
+--Transparent-White-Paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-Light-GrayBackground-Headings-Buttons: hsl(0, 0%, 95%);
+
+        /*-----------FONT SIZES-------------*/
+--Font-Size: 15px;
+
+        /*-----------FONT FAMILIES-------------*/
+--Font-Lexend: 'Lexend Deca', sans-serif;
+--Font-Big-Shoulders: 'Big Shoulders Display', cursive;
+}
+
+        /*-----------GLOBAL STYLES-------------*/
+*{
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+body{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   padding: 2rem;
+   font-size: var(--Font-Size);
+}
+
+ /*-----------MAIN CARD STYLES-------------*/
+.card{
+    padding: 2rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 290px;
+}
+
+
+ /*-----------INDIVIDUAL CARD STYLES-------------*/
+.cars{
+    width: 45px;
+}
+h1{
+    color: var(--Very-Light-GrayBackground-Headings-Buttons);
+    font-family: var(--Font-Big-Shoulders);
+}
+p{
+    color: var(--Transparent-White-Paragraphs);
+    font-family: var(--Font-Lexend);
+}
+.card-1{
+    background: var(--Bright-orange);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card-2{
+    background: var(--Dark-Cyan);
+}
+.card-3{
+    background: var(--Very-Dark-Cyan);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.card{
+    width: 270px;
+}
+
+ /*-----------LEARN MORE BUTTON STYLES-------------*/
+.btn{
+    padding: 0.5rem;
+    border-radius: 2rem;
+    border: none;
+    width: 100px;
+    font-weight: bold;
+}
+.btn-1{
+    color: var(--Bright-orange);
+}
+.btn-2{
+    color: var(--Dark-Cyan);
+}
+.btn-3{
+    color: var(--Very-Dark-Cyan);
+}
+
+/*----------ACTIVE STATES----------*/
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+@media(min-width:900px){
+    .cards{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+    }
+    .card-1{
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 1rem;
+
+    }
+    .card-3{
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-bottom-left-radius: 0;
+    }
+    .card{
+        justify-content: flex-start;
+        height: 400px;
+    }
+    .card p{
+        margin-bottom: 5rem;
+    }
+}
+
+
+
+
