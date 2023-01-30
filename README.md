@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/3-column-preview-card-r8JNaHKg5s)
 - Live Site URL: (https://00awaudby.github.io/3-car-columns/)
 
 ## My process
