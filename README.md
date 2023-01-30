@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![30 01 2023_11 17 19_REC](https://user-images.githubusercontent.com/84845712/215463057-9bb9159f-6a0b-478d-a4e2-4c3c045b370a.png)
+
 
 
 
